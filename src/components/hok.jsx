@@ -43,12 +43,8 @@ export const hokBook = (WrappedComponent) => {
       );
     }
   }
-  const mapStateToProps = (state) => {
-    return {
-      books: state.books.books,
-    };
-  };
-  let ConnectedAuthRedirectComponent = connect(mapStateToProps, {
+
+  let ConnectedAuthRedirectComponent = connect(null, {
     setBooks,
     addToCart,
     setPricePlus,

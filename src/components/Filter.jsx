@@ -14,7 +14,16 @@ const Filter = ({ setFilter, setSearchQuery, searchQuery }) => {
 
   return (
     <>
-      <Menu style={{ width: 256, height: "auto" }} defaultSelectedKeys={["1"]}>
+      <Menu
+        style={{
+          display: "flex",
+          alignItems: "center",
+          width: "100%",
+          height: "100%",
+        }}
+        mode="horizontal"
+        defaultSelectedKeys={["1"]}
+      >
         <Menu.Item
           key="1"
           icon={<MailOutlined />}
@@ -22,13 +31,7 @@ const Filter = ({ setFilter, setSearchQuery, searchQuery }) => {
         >
           Всi
         </Menu.Item>
-        <Menu.Item
-          key="2"
-          icon={<CalendarOutlined />}
-          onClick={() => filterItemClick("popular")}
-        >
-          Популярнi{" "}
-        </Menu.Item>
+
         <Menu.Item
           key="3"
           icon={<CalendarOutlined />}

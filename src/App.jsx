@@ -7,6 +7,7 @@ import { Route, withRouter } from "react-router-dom";
 
 import Cart from "./components/Cart";
 import WrapeBookPage from "./components/Content/CardBook/BookPage";
+import Filter from "./components/Filter";
 
 const { Header, Content, Footer } = Layout;
 
