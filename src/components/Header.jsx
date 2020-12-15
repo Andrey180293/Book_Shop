@@ -32,7 +32,7 @@ const HeaderComponent = ({ Menu, Header, totalPrice, count }) => {
             {" "}
             <NavLink to="/cart"> Корзина({count})</NavLink>{" "}
           </Menu.Item>
-          <Menu.Item key="3">Сума({totalPrice})</Menu.Item>
+          <span>Сума({totalPrice})</span>
         </Menu>
       </div>
       <div>

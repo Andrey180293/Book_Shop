@@ -33,13 +33,8 @@ const sortBy = (books, byFilter) => {
       return orderBy(books, "price", "desc");
     case "price_low":
       return orderBy(books, "price", "asc");
-    case "author":
-      return orderBy(books, "author", "asc");
-    case "newSort":
-      return books.filter(
-        (item, index, a) =>
-          a.findIndex((t) => t.author === item.author) !== index
-      );
+    case "name":
+      return orderBy(books, "name", "asc");
 
     default:
       return books;
